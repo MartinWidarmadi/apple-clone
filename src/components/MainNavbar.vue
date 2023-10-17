@@ -3,7 +3,7 @@
     <!-- navbar bg color -->
     <div class="bg-gray-200">
       <!-- navbar container -->
-      <div class="max-w-lg px-2 py-2 mx-auto sm:max-w-2xl md:max-w-5xl lg:max-w-5xl">
+      <div class="max-w-lg px-2 py-2 mx-auto sm:max-w-xl md:max-w-4xl lg:max-w-5xl">
         <!-- navbar -->
         <nav class="flex items-center justify-between">
           <div>

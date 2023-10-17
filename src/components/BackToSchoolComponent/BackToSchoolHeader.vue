@@ -14,14 +14,13 @@
     <div class="bg-white">
       <!-- header container -->
       <div class="max-w-lg pt-2 mx-auto sm:max-w-2xl md:max-w-5xl lg:max-w-5xl">
-        <!-- navbar
-          <MainNavbar /> -->
-
         <!-- header content -->
-        <div class="max-w-3xl mx-auto">
+        <div class="max-w-xs mx-auto sm:max-w-sm md:max-w-lg lg:max-w-xl">
           <div class="pt-20 space-y-5 text-center">
-            <h1 class="text-5xl font-bold">Bring on college.</h1>
-            <h2 class="text-md">
+            <h1 class="text-4xl font-bold sm:text-5xl md:text-6xl lg:text-7xl">
+              Bring on college.
+            </h1>
+            <h2 class="text-sm sm:text-md md:text-xl lg:text-2xl">
               Save on Mac or iPad with education pricing. Plus get a gift card up to $150,footnote1
               20% off AppleCare+,and more.
             </h2>
