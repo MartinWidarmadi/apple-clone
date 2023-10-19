@@ -1,7 +1,7 @@
 <template>
   <footer>
     <div class="bg-gray-200">
-      <div class="max-w-5xl mx-auto space-y-2 bg-gray-200">
+      <div class="max-w-sm mx-auto space-y-2 bg-gray-200 sm:max-w-lg md:max-w-3xl lg:max-w-5xl">
         <!-- table -->
         <div class="py-5 border-b-2 border-gray-300">
           <table class="text-xs border-separate table-auto border-spacing-1">
@@ -195,132 +195,145 @@
 
         <!-- all links -->
         <div>
-          <div class="grid grid-cols-5 my-5 text-xs">
+          <div class="flex flex-col grid-cols-5 my-5 text-xs md:grid">
             <!-- first col -->
             <div class="grid grid-cols-1 gap-1 grid-row-2">
               <!-- shop and learn links -->
-              <div class="flex flex-col gap-2">
-                <h5 class="font-semibold">Shop and Learn</h5>
-                <a href="#">Store</a>
-                <a href="#">Mac</a>
-                <a href="#">iPad</a>
-                <a href="#">iPhone</a>
-                <a href="#">Watch</a>
-                <a href="#">Vision</a>
-                <a href="#">AirPods</a>
-                <a href="#">TV & Home</a>
-                <a href="#">Air Tag</a>
-                <a href="#">Accessories</a>
-                <a href="#">Gift Cards</a>
-              </div>
+              <FooterNavbarSingle
+                :title="'Shop and Learn'"
+                :id="'shop'"
+                :links="[
+                  'Store',
+                  'Mac',
+                  'iPad',
+                  'iPhone',
+                  'Watch',
+                  'Vision',
+                  'AirPods',
+                  'TV & Home',
+                  'Air Tag',
+                  'Accessories',
+                  'Gift Cards'
+                ]"
+              />
               <!-- apple wallet links -->
-              <div class="flex flex-col gap-2">
-                <h5 class="font-semibold">Apple Wallet</h5>
-                <a href="#">Wallet</a>
-                <a href="#">Apple Card</a>
-                <a href="#">Apple Pay</a>
-                <a href="#">Apple Cash</a>
-              </div>
+              <FooterNavbarSingle
+                :title="'Apple Wallet'"
+                :id="'wallet'"
+                :links="['Wallet', 'Apple Card', 'Apple Pay', 'Apple Cash']"
+              />
             </div>
 
             <!-- second col -->
             <div class="grid grid-cols-1 gap-1 grid-row-2">
               <!-- Account links -->
-              <div class="flex flex-col gap-2">
-                <h5 class="font-semibold">Account</h5>
-                <a href="#">Manage Your Apple ID</a>
-                <a href="#">Apple Store Account</a>
-                <a href="#">iCloud.com</a>
-              </div>
+              <FooterNavbarSingle
+                :title="'Account'"
+                :id="'account'"
+                :links="['Manage Your Apple ID', 'Apple Store Account', 'iCloud.com']"
+              />
               <!-- Entertaiment links -->
-              <div class="flex flex-col gap-2">
-                <h5 class="font-semibold">Entertaiment</h5>
-                <a href="#">Apple One</a>
-                <a href="#">Apple TV+</a>
-                <a href="#">Apple Music</a>
-                <a href="#">Apple Arcade</a>
-                <a href="#">Apple Fitness+</a>
-                <a href="#">Apple News+</a>
-                <a href="#">Apple Podcasts</a>
-                <a href="#">Apple Books</a>
-                <a href="#">Apple Store</a>
-              </div>
+              <FooterNavbarSingle
+                :title="'Entertaiment'"
+                :id="'entertaiment'"
+                :links="[
+                  'Apple One',
+                  'Apple TV+',
+                  'Apple Music',
+                  'Apple Arcade',
+                  'Apple Fitness+',
+                  'Apple News+',
+                  'Apple Podcasts',
+                  'Apple Books',
+                  'Apple Store'
+                ]"
+              />
             </div>
 
             <!-- third col -->
             <div class="grid grid-cols-1 gap-1 grid-row-1">
               <!-- apple store links -->
-              <div class="flex flex-col gap-2">
-                <h5 class="font-semibold">Apple Store</h5>
-                <a href="#">Find a Store</a>
-                <a href="#">Genius Bar</a>
-                <a href="#">Today at Apple</a>
-                <a href="#">Apple Camp</a>
-                <a href="#">Apple Store App</a>
-                <a href="#">Certified Refurbished</a>
-                <a href="#">Apple Trade In</a>
-                <a href="#">Order Status</a>
-                <a href="#">Shopping Help</a>
-              </div>
+              <FooterNavbarSingle
+                :title="'Apple Store'"
+                :id="'store'"
+                :links="[
+                  'Find a Store',
+                  'Genius Bar',
+                  'Today at Apple',
+                  'Apple Camp',
+                  'Apple Store App',
+                  'Certified Refurbished',
+                  'Apple Trade In',
+                  'Order Status',
+                  'Shopping Help'
+                ]"
+              />
             </div>
             <!-- fourth col -->
             <div class="grid grid-cols-1 gap-1 grid-row-4">
               <!-- for business links -->
-              <div class="flex flex-col gap-2">
-                <h5 class="font-semibold">For Business</h5>
-                <a href="#">Apple and Business</a>
-                <a href="#">Shop for Business</a>
-              </div>
+              <FooterNavbarSingle
+                :title="'For Business'"
+                :id="'business'"
+                :links="['Apple and Business', 'Shop for Business']"
+              />
 
               <!-- for education links -->
-              <div class="flex flex-col gap-2">
-                <h5 class="font-semibold">For Education</h5>
-                <a href="#">Apple and Education</a>
-                <a href="#">Shop for K-12</a>
-                <a href="#">Shop for College</a>
-              </div>
-
+              <FooterNavbarSingle
+                :title="'For Education'"
+                :id="'education'"
+                :links="['Apple and Education', 'Shop for K-12', 'Shop for College']"
+              />
               <!-- for healthcare links -->
-              <div class="flex flex-col gap-2">
-                <h5 class="font-semibold">For Healthcare</h5>
-                <a href="#">Apple in Healthcare</a>
-                <a href="#">Health on Apple Watch</a>
-                <a href="#">Health Records on iPhone</a>
-              </div>
-
+              <FooterNavbarSingle
+                :title="'For Healthcare'"
+                :id="'healthcare'"
+                :links="[
+                  'Apple in Healthcare',
+                  'Health on Apple Watch',
+                  'Health Records on iPhone'
+                ]"
+              />
               <!-- for goverment links -->
-              <div class="flex flex-col gap-2">
-                <h5 class="font-semibold">For Goverment</h5>
-                <a href="#">Shop for Goverment</a>
-                <a href="#">Shop for Veterans and Military</a>
-              </div>
+              <FooterNavbarSingle
+                :title="'For Goverment'"
+                :id="'goverment'"
+                :links="['Shop for Goverment', 'Shop for Veterans and Military']"
+              />
             </div>
 
             <!-- fifth col -->
             <div class="grid grid-cols-1 gap-1 grid-row-2">
               <!-- apple values links -->
-              <div class="flex flex-col gap-2">
-                <h5 class="font-semibold">Apple Values</h5>
-                <a href="#">Accessibility</a>
-                <a href="#">Education</a>
-                <a href="#">Environment</a>
-                <a href="#">Inclusion and Diversity</a>
-                <a href="#">Privacy</a>
-                <a href="#">Racial Equity and Justice</a>
-                <a href="#">Supplier Responsibility</a>
-              </div>
+              <FooterNavbarSingle
+                :title="'Apple Values'"
+                :id="'values'"
+                :links="[
+                  'Apple Values',
+                  'Accessibility',
+                  'Education',
+                  'Environment',
+                  'Inclusion and Diversity',
+                  'Privacy',
+                  'Racial Equity and Justice',
+                  'Supplier Responsibility'
+                ]"
+              />
 
               <!-- about apple links -->
-              <div class="flex flex-col gap-2">
-                <h5 class="font-semibold">About Apple</h5>
-                <a href="#">Newsroom</a>
-                <a href="#">Apple Leadership</a>
-                <a href="#">Career Opportunities</a>
-                <a href="#">Investors</a>
-                <a href="#">Ethics & Compliance</a>
-                <a href="#">Events</a>
-                <a href="#">Contact Apple</a>
-              </div>
+              <FooterNavbarSingle
+                :title="'About Apple'"
+                :id="'about'"
+                :links="[
+                  'Newsroom',
+                  'Apple Leadership',
+                  'Career Opportunities',
+                  'Investors',
+                  'Ethics & Compliance',
+                  'Events',
+                  'Contact Apple'
+                ]"
+              />
             </div>
           </div>
         </div>
@@ -335,9 +348,9 @@
 
         <!-- copyright stuff -->
         <div class="pb-2">
-          <div class="flex justify-between text-xs">
+          <div class="flex flex-wrap justify-between text-xs">
             <div>Copyright © 2023 Apple inc. All rights reserved.</div>
-            <div class="flex gap-2 divide-x-2 divide-gray-400">
+            <div class="flex flex-wrap gap-2 divide-x-[1px] divide-gray-400">
               <a href="#">Privacy Policy</a>
               <a href="#" class="ps-2">Terms of Use</a>
               <a href="#" class="ps-2">Sales and Refunds</a>
@@ -351,4 +364,6 @@
   </footer>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import FooterNavbarSingle from '../FooterNavbarSingle.vue'
+</script>
