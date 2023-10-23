@@ -1,6 +1,6 @@
 <template>
   <div>
     <!-- Header -->
-    <header class=""></header>
+    <header class="">This is Store Pages</header>
   </div>
 </template>

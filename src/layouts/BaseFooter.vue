@@ -365,5 +365,5 @@
 </template>
 
 <script setup lang="ts">
-import FooterNavbarSingle from '../FooterNavbarSingle.vue'
+import FooterNavbarSingle from '@/components/NavCollapse.vue'
 </script>

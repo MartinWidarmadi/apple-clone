@@ -1,12 +1,3 @@
-<script setup lang="ts">
-import BackToSchoolView from './views/BackToSchoolView.vue'
-import MainNavbar from './components/MainNavbar.vue'
-</script>
-
 <template>
-  <div></div>
-  <MainNavbar />
-  <BackToSchoolView />
+  <router-view></router-view>
 </template>
-
-<style scoped></style>

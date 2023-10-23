@@ -7,9 +7,9 @@
         <!-- navbar -->
         <nav class="flex items-center justify-between">
           <div>
-            <a href="#">
+            <router-link to="/">
               <font-awesome-icon :icon="['fab', 'apple']" class="text-md md:text-xl" />
-            </a>
+            </router-link>
           </div>
           <div class="items-center hidden text-xs font-semibold md:gap-7 lg:gap-9 md:flex">
             <router-link to="/stores">Store</router-link>
@@ -31,9 +31,9 @@
             <a href="#">
               <font-awesome-icon :icon="['fas', 'bag-shopping']" class="text-md md:text-xl" />
             </a>
-            <a href="#">
+            <router-link to="/login">
               <font-awesome-icon :icon="['fas', 'bars']" class="md:hidden text-md md:text-xl" />
-            </a>
+            </router-link>
           </div>
         </nav>
       </div>
