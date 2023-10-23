@@ -11,7 +11,7 @@
               <font-awesome-icon :icon="['fab', 'apple']" class="text-md md:text-xl" />
             </router-link>
           </div>
-          <div class="items-center hidden text-xs font-semibold md:gap-7 lg:gap-9 md:flex">
+          <div class="items-center hidden text-xs font-semibold md:gap-5 lg:gap-9 md:flex">
             <router-link to="/stores">Store</router-link>
             <a href="#">Mac</a>
             <a href="#">iPad</a>
@@ -28,15 +28,22 @@
             <a href="#">
               <font-awesome-icon :icon="['fas', 'magnifying-glass']" class="text-md md:text-xl" />
             </a>
-            <a href="#">
-              <font-awesome-icon :icon="['fas', 'bag-shopping']" class="text-md md:text-xl" />
-            </a>
             <router-link to="/login">
+              <font-awesome-icon :icon="['fas', 'bag-shopping']" class="text-md md:text-xl" />
+            </router-link>
+            <router-link to="">
               <font-awesome-icon :icon="['fas', 'bars']" class="md:hidden text-md md:text-xl" />
             </router-link>
+            <h2>{{ user.$state.user }}</h2>
           </div>
         </nav>
       </div>
     </div>
   </div>
 </template>
+
+<script setup lang="ts">
+import { useUserStore } from '@/stores/user'
+
+const user = useUserStore()
+</script>
