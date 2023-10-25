@@ -1,5 +1,5 @@
 <template>
-  <div class="text-center bg-white rounded-lg">
+  <div class="pb-5 text-center bg-white rounded-lg lg:pb-0">
     <div>
       <img :src="imgUrl" alt="" />
     </div>

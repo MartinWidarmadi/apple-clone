@@ -11,8 +11,9 @@ import { faApple } from '@fortawesome/free-brands-svg-icons'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
 import { faBagShopping } from '@fortawesome/free-solid-svg-icons'
+import { faXmark } from '@fortawesome/free-solid-svg-icons'
 
-library.add(faApple, faBars, faMagnifyingGlass, faBagShopping)
+library.add(faApple, faBars, faMagnifyingGlass, faBagShopping, faXmark)
 
 const app = createApp(App)
 

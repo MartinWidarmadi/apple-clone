@@ -38,7 +38,7 @@
     <div class="bg-gray-200">
       <!-- main navbar container -->
       <div class="sticky top-0 w-full bg-gray-200 backdrop-blur-sm bg-opacity-95">
-        <div class="max-w-xs mx-auto sm:max-w-sm md:max-w-md lg:max-w-lg">
+        <div class="max-w-[18rem] mx-auto sm:max-w-sm md:max-w-md lg:max-w-lg">
           <!-- navbar -->
           <div class="py-2 border-b-2 border-b-gray-300">
             <nav class="flex justify-between text-xs font-medium sm:text-sm md:text-md lg:text-lg">
@@ -54,7 +54,7 @@
       <div class="max-w-lg pt-2 mx-auto sm:max-w-2xl md:max-w-3xl lg:max-w-5xl">
         <div class="py-10">
           <!-- mac header -->
-          <div class="space-y-4 text-center">
+          <div class="max-w-[18rem] sm:max-w-xl md:max-w-3xl mx-auto space-y-4 text-center">
             <h4 class="font-semibold lg:text-2xl sm:text-lg md:text-xl text-md">Mac</h4>
             <h3 class="text-2xl font-semibold sm:text-3xl md:text-4xl lg:text-5xl">
               Power that's in a class by itself.
